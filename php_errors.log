@@ -1,0 +1,118 @@
+[16-Mar-2016 19:27:41 UTC] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /home/ubuntu/workspace/wp-includes/media.php on line 2743
+[16-Mar-2016 19:27:41 UTC] PHP Stack trace:
+[16-Mar-2016 19:27:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[16-Mar-2016 19:27:41 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[16-Mar-2016 19:27:41 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[16-Mar-2016 19:27:41 UTC] PHP   4. Custom_Image_Header->ajax_header_crop() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[16-Mar-2016 19:27:41 UTC] PHP   5. wp_crop_image() /home/ubuntu/workspace/wp-admin/custom-header.php:1199
+[16-Mar-2016 19:27:41 UTC] PHP   6. WP_Image_Editor_GD->crop() /home/ubuntu/workspace/wp-admin/includes/image.php:43
+[16-Mar-2016 19:27:41 UTC] PHP   7. wp_imagecreatetruecolor() /home/ubuntu/workspace/wp-includes/class-wp-image-editor-gd.php:294
+[16-Mar-2016 19:27:41 UTC] PHP   8. imagecreatetruecolor() /home/ubuntu/workspace/wp-includes/media.php:2743
+[16-Mar-2016 19:27:41 UTC] PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/wp-includes/class-wp-image-editor-gd.php on line 304
+[16-Mar-2016 19:27:41 UTC] PHP Stack trace:
+[16-Mar-2016 19:27:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[16-Mar-2016 19:27:41 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[16-Mar-2016 19:27:41 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[16-Mar-2016 19:27:41 UTC] PHP   4. Custom_Image_Header->ajax_header_crop() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[16-Mar-2016 19:27:41 UTC] PHP   5. wp_crop_image() /home/ubuntu/workspace/wp-admin/custom-header.php:1199
+[16-Mar-2016 19:27:41 UTC] PHP   6. WP_Image_Editor_GD->crop() /home/ubuntu/workspace/wp-admin/includes/image.php:43
+[16-Mar-2016 19:27:41 UTC] PHP   7. imagecopyresampled() /home/ubuntu/workspace/wp-includes/class-wp-image-editor-gd.php:304
+[16-Mar-2016 19:44:51 UTC] PHP Warning:  intval() expects parameter 2 to be long, object given in /home/ubuntu/workspace/wp-includes/plugin.php on line 235
+[16-Mar-2016 19:44:51 UTC] PHP Stack trace:
+[16-Mar-2016 19:44:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[16-Mar-2016 19:44:51 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[16-Mar-2016 19:44:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[16-Mar-2016 19:44:51 UTC] PHP   4. WP_Customize_Manager->save() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[16-Mar-2016 19:44:51 UTC] PHP   5. WP_Customize_Setting->save() /home/ubuntu/workspace/wp-includes/class-wp-customize-manager.php:981
+[16-Mar-2016 19:44:51 UTC] PHP   6. WP_Customize_Setting->post_value() /home/ubuntu/workspace/wp-includes/class-wp-customize-setting.php:458
+[16-Mar-2016 19:44:51 UTC] PHP   7. WP_Customize_Manager->post_value() /home/ubuntu/workspace/wp-includes/class-wp-customize-setting.php:487
+[16-Mar-2016 19:44:51 UTC] PHP   8. WP_Customize_Setting->sanitize() /home/ubuntu/workspace/wp-includes/class-wp-customize-manager.php:644
+[16-Mar-2016 19:44:51 UTC] PHP   9. apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-customize-setting.php:509
+[16-Mar-2016 19:44:51 UTC] PHP  10. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:235}() /home/ubuntu/workspace/wp-includes/plugin.php:235
+[16-Mar-2016 19:44:51 UTC] PHP  11. intval() /home/ubuntu/workspace/wp-includes/plugin.php:235
+[13-Apr-2016 20:29:20 UTC] PHP Warning:  fsockopen(): unable to connect to smtp.gmail.com:2525 (Connection timed out) in /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php on line 123
+[13-Apr-2016 20:29:20 UTC] PHP Stack trace:
+[13-Apr-2016 20:29:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Apr-2016 20:29:20 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[13-Apr-2016 20:29:20 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:29:20 UTC] PHP   4. WYSIJA_help->ajax() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:29:20 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395}() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:29:20 UTC] PHP   6. WYSIJA_control_back_config->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:29:20 UTC] PHP   7. WYSIJA_help_email->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/controllers/ajax/config.php:33
+[13-Apr-2016 20:29:20 UTC] PHP   8. WYSIJA_help_mailer->sendSimple() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/email.php:99
+[13-Apr-2016 20:29:20 UTC] PHP   9. WYSIJA_help_mailer->sendOne() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:818
+[13-Apr-2016 20:29:20 UTC] PHP  10. WYSIJA_help_mailer->send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:667
+[13-Apr-2016 20:29:20 UTC] PHP  11. acymailingPHPMailer->Send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:239
+[13-Apr-2016 20:29:20 UTC] PHP  12. acymailingPHPMailer->SmtpSend() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:447
+[13-Apr-2016 20:29:20 UTC] PHP  13. acymailingPHPMailer->SmtpConnect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:566
+[13-Apr-2016 20:29:20 UTC] PHP  14. acymailingSMTP->Connect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:658
+[13-Apr-2016 20:29:20 UTC] PHP  15. fsockopen() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php:123
+[13-Apr-2016 20:31:22 UTC] PHP Warning:  fsockopen(): unable to connect to smtp.gmail.com:2525 (Connection timed out) in /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php on line 123
+[13-Apr-2016 20:31:22 UTC] PHP Stack trace:
+[13-Apr-2016 20:31:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Apr-2016 20:31:22 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[13-Apr-2016 20:31:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:31:22 UTC] PHP   4. WYSIJA_help->ajax() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:31:22 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395}() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:31:22 UTC] PHP   6. WYSIJA_control_back_config->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:31:22 UTC] PHP   7. WYSIJA_help_email->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/controllers/ajax/config.php:33
+[13-Apr-2016 20:31:22 UTC] PHP   8. WYSIJA_help_mailer->sendSimple() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/email.php:99
+[13-Apr-2016 20:31:22 UTC] PHP   9. WYSIJA_help_mailer->sendOne() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:818
+[13-Apr-2016 20:31:22 UTC] PHP  10. WYSIJA_help_mailer->send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:667
+[13-Apr-2016 20:31:22 UTC] PHP  11. acymailingPHPMailer->Send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:239
+[13-Apr-2016 20:31:22 UTC] PHP  12. acymailingPHPMailer->SmtpSend() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:447
+[13-Apr-2016 20:31:22 UTC] PHP  13. acymailingPHPMailer->SmtpConnect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:566
+[13-Apr-2016 20:31:22 UTC] PHP  14. acymailingSMTP->Connect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:658
+[13-Apr-2016 20:31:22 UTC] PHP  15. fsockopen() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php:123
+[13-Apr-2016 20:44:31 UTC] PHP Warning:  fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol in /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php on line 123
+[13-Apr-2016 20:44:31 UTC] PHP Stack trace:
+[13-Apr-2016 20:44:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Apr-2016 20:44:31 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[13-Apr-2016 20:44:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:44:31 UTC] PHP   4. WYSIJA_help->ajax() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:44:31 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395}() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:44:31 UTC] PHP   6. WYSIJA_control_back_config->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:44:31 UTC] PHP   7. WYSIJA_help_email->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/controllers/ajax/config.php:33
+[13-Apr-2016 20:44:31 UTC] PHP   8. WYSIJA_help_mailer->sendSimple() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/email.php:99
+[13-Apr-2016 20:44:31 UTC] PHP   9. WYSIJA_help_mailer->sendOne() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:818
+[13-Apr-2016 20:44:31 UTC] PHP  10. WYSIJA_help_mailer->send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:667
+[13-Apr-2016 20:44:31 UTC] PHP  11. acymailingPHPMailer->Send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:239
+[13-Apr-2016 20:44:31 UTC] PHP  12. acymailingPHPMailer->SmtpSend() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:447
+[13-Apr-2016 20:44:31 UTC] PHP  13. acymailingPHPMailer->SmtpConnect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:566
+[13-Apr-2016 20:44:31 UTC] PHP  14. acymailingSMTP->Connect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:658
+[13-Apr-2016 20:44:31 UTC] PHP  15. fsockopen() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php:123
+[13-Apr-2016 20:44:31 UTC] PHP Warning:  fsockopen(): Failed to enable crypto in /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php on line 123
+[13-Apr-2016 20:44:31 UTC] PHP Stack trace:
+[13-Apr-2016 20:44:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Apr-2016 20:44:31 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[13-Apr-2016 20:44:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:44:31 UTC] PHP   4. WYSIJA_help->ajax() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:44:31 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395}() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:44:31 UTC] PHP   6. WYSIJA_control_back_config->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:44:31 UTC] PHP   7. WYSIJA_help_email->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/controllers/ajax/config.php:33
+[13-Apr-2016 20:44:31 UTC] PHP   8. WYSIJA_help_mailer->sendSimple() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/email.php:99
+[13-Apr-2016 20:44:31 UTC] PHP   9. WYSIJA_help_mailer->sendOne() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:818
+[13-Apr-2016 20:44:31 UTC] PHP  10. WYSIJA_help_mailer->send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:667
+[13-Apr-2016 20:44:31 UTC] PHP  11. acymailingPHPMailer->Send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:239
+[13-Apr-2016 20:44:31 UTC] PHP  12. acymailingPHPMailer->SmtpSend() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:447
+[13-Apr-2016 20:44:31 UTC] PHP  13. acymailingPHPMailer->SmtpConnect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:566
+[13-Apr-2016 20:44:31 UTC] PHP  14. acymailingSMTP->Connect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:658
+[13-Apr-2016 20:44:31 UTC] PHP  15. fsockopen() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php:123
+[13-Apr-2016 20:44:31 UTC] PHP Warning:  fsockopen(): unable to connect to ssl://smtp.mailgun.org:2525 (Unknown error) in /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php on line 123
+[13-Apr-2016 20:44:31 UTC] PHP Stack trace:
+[13-Apr-2016 20:44:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Apr-2016 20:44:31 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[13-Apr-2016 20:44:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:44:31 UTC] PHP   4. WYSIJA_help->ajax() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[13-Apr-2016 20:44:31 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395}() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:44:31 UTC] PHP   6. WYSIJA_control_back_config->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[13-Apr-2016 20:44:31 UTC] PHP   7. WYSIJA_help_email->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/controllers/ajax/config.php:33
+[13-Apr-2016 20:44:31 UTC] PHP   8. WYSIJA_help_mailer->sendSimple() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/email.php:99
+[13-Apr-2016 20:44:31 UTC] PHP   9. WYSIJA_help_mailer->sendOne() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:818
+[13-Apr-2016 20:44:31 UTC] PHP  10. WYSIJA_help_mailer->send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:667
+[13-Apr-2016 20:44:31 UTC] PHP  11. acymailingPHPMailer->Send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:239
+[13-Apr-2016 20:44:31 UTC] PHP  12. acymailingPHPMailer->SmtpSend() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:447
+[13-Apr-2016 20:44:31 UTC] PHP  13. acymailingPHPMailer->SmtpConnect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:566
+[13-Apr-2016 20:44:31 UTC] PHP  14. acymailingSMTP->Connect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:658
+[13-Apr-2016 20:44:31 UTC] PHP  15. fsockopen() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php:123

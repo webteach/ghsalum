@@ -1,0 +1,73 @@
+ChangeLog
+=========
+
+Version 1.0.0.9
+
+	i) Used Proper names for Enquing Scripts
+	ii) Slight CSS Update.
+
+Version 1.0.0.8
+
+	i) - Removed the_archive_description & the_archive_title functions, to use Core Implementations.
+
+Version 1.0.0.7
+
+	i) Font Awesome Updated to Latest Version 4.5
+
+Version 1.0.0.6
+
+	i) Fixed Issues with Footer Widget Area 4 Not appearing.			
+	ii) Added nofollow to Footer Credit Link.
+
+Version 1.0.0.5
+
+	i) Fixed Issues with Gravatar Not loading.
+	ii) Fixed Issues with Large logos.
+	iii) Fixed Default Value for Dark Filters.
+
+Version 1.0.0.4
+
+	i) Added Freak Pro Details
+	ii) Updated freak.pot
+	iii) Fixed Issues with Font Weights
+	iv) Fixed Weird Appearance of Static Bar on Customizer Screen
+	v) Corrected Textdomain typo
+
+
+Version 1.0.0.3
+
+	i) Fixed Weird Appearance Issue of Mobile Menu on Desktops.
+	ii) Minor CSS Edits.
+	iii) Added Option to Disable Parallax Image.
+	iv) Added Option for Multiple Header Sizes.
+	v) Added Option to Remove Search Bar from Header.
+	vi) Added Options to Control Parallax Speed.
+	vii) Fixed Issues with Logo Size on Static Menu Bar.
+
+Version 1.0
+
+	i) Fixed all issues related to Missing/Wrong Text Domains.
+	ii) Properly escaped all values on Output
+
+Version 0.93
+
+	i) Corrected Package name in comments.php
+	ii) Fixed Issues with Color of Visited Links.
+	iii) Specified Font Weights While Importing
+	
+Version 0.92*
+
+	i) Removed config.codekit
+
+Version 0.91*
+
+	i) Corrected Theme URI
+	ii) Corrected Package name in comments.php
+	iii) Removed Hidden Folders.
+	iv) Removed Comment in header.php
+	v) Removed rtl.css
+	vi) Corrected Language File.
+
+Version 0.9 *
+
+	- Initial Release

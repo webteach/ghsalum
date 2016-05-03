@@ -1,0 +1,272 @@
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: altertech_s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/altertech_s\n"
+"POT-Creation-Date: 2015-06-23 12:51+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop()\r;_x()\r;_nx()\r;_nx_noop()\r;_ex()\r;esc_attr__()\r;esc_attr_e()\r;esc_attr_x()\r;esc_html__()\r;esc_html_e()\r;esc_html_x()\r;_c()\r;_nc\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:12
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:13
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: author.php:21
+msgid "Author"
+msgstr ""
+
+#: author.php:23
+msgid "Website"
+msgstr ""
+
+#: author.php:24
+msgid "Profile"
+msgstr ""
+
+#: author.php:26
+msgid "Posts by"
+msgstr ""
+
+#: comments.php:45
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:20
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:21
+#, php-format
+msgid "Ready to publish your first post? <br> <p class=\"medium\"><a class=\"button--primary\" href=\"%1$s\">Get started here</a>.</p>"
+msgstr ""
+
+#: content-none.php:32
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: content-none.php:43
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: content-page-full.php:24 content-page.php:24 content-single.php:38
+msgid "Pages:"
+msgstr ""
+
+#: content-search.php:33
+msgid "Full Content"
+msgstr ""
+
+#: content.php:40
+msgid "Type password to Read"
+msgstr ""
+
+#: content.php:42
+msgid "Read the full post"
+msgstr ""
+
+#: footer.php:16
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:16
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:16
+#, php-format
+msgid "Theme: %1$s made with <i style=\"color:red;\" class=\"genericon genericon-heart\"></i> by  %2$s."
+msgstr ""
+
+#: functions.php:43
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:77
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions.php:79
+msgid "This is a simple rght Sidebar"
+msgstr ""
+
+#: functions.php:86
+msgid "Footer Sidebar"
+msgstr ""
+
+#: functions.php:88
+msgid "This is multi-layout Footer Sidebar"
+msgstr ""
+
+#: header.php:35
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:44
+msgid "Menu"
+msgstr ""
+
+#: header.php:65
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer.php:19 inc/customizer.php:27
+msgid "Favicon"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Upload your Favicon</br><span style=\"color:red;\">The should be .jpg and .png but the size must be 192x192 px</span>"
+msgstr ""
+
+#: inc/customizer.php:33 inc/customizer.php:41
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "Upload a logo to replace the default site name and description in the header"
+msgstr ""
+
+#: inc/customizer.php:47
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer.php:49
+msgid "Write text to display in footer"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "Author Settings"
+msgstr ""
+
+#: inc/customizer.php:65
+msgid "If checked hide the authors page."
+msgstr ""
+
+#: inc/customizer.php:90
+msgid "Header Color"
+msgstr ""
+
+#: inc/customizer.php:109
+msgid "Sidebar Color"
+msgstr ""
+
+#: inc/customizer.php:128
+msgid "Link Menu Color"
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "Link Color"
+msgstr ""
+
+#: inc/customizer.php:166
+msgid "Link Hover Color"
+msgstr ""
+
+#: inc/template-tags.php:20
+msgid "Comment navigation"
+msgstr ""
+
+#: inc/template-tags.php:48 inc/template-tags.php:73
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:50 inc/template-tags.php:52
+msgid "<span class=\"meta-nav\"></span>"
+msgstr ""
+
+#: inc/template-tags.php:126 inc/template-tags.php:132
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:128
+#, php-format
+msgid "<i class=\"genericon genericon-category gs-xlarge\"></i> <strong>Category:</strong> %1$s"
+msgstr ""
+
+#: inc/template-tags.php:134
+#, php-format
+msgid "<i class=\"genericon genericon-tag gs-xlarge\"></i> <strong>Tag:</strong>  %1$s"
+msgstr ""
+
+#: inc/template-tags.php:140
+msgid "Leave a comment <i class=\"genericon genericon-reply gs-xlarge\"></i>"
+msgstr ""
+
+#: inc/template-tags.php:140
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:140
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:162
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:164
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:166
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:168
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:170
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:172
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:192
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: inc/template-tags.php:196
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:198
+msgid "Archives"
+msgstr ""
+
+#: product-searchform.php:11
+msgid "Search for products"
+msgstr ""
+
+#: product-searchform.php:13
+msgid "product"
+msgstr ""
+
+#: search.php:16
+msgid "Search Results For"
+msgstr ""

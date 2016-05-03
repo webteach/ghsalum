@@ -1,0 +1,451 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: School 1.4.1\n"
+"POT-Creation-Date: 2014-12-10 21:49+0200\n"
+"PO-Revision-Date: 2014-12-10 21:49+0200\n"
+"Last-Translator: \n"
+"Language-Team: Ketchup Themes <info@ketchupthemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+
+#: archive.php:12
+#: home.php:19
+#: index.php:12
+#: search.php:12
+#: single.php:13
+msgid "Home"
+msgstr ""
+
+#: archive.php:39
+#: home.php:52
+#: index.php:39
+#: search.php:39
+msgid "by"
+msgstr ""
+
+#: archive.php:57
+#: home.php:69
+#: index.php:57
+#: search.php:57
+msgid "Read More.."
+msgstr ""
+
+#: comments.php:21
+#: comments.php:39
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:22
+#: comments.php:40
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:23
+#: comments.php:41
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:11
+#: footer.php:21
+#: footer.php:30
+#: footer.php:40
+#: sidebar.php:4
+msgid "Widgetized Sidebar"
+msgstr ""
+
+#: footer.php:12
+#: footer.php:22
+#: footer.php:31
+#: footer.php:41
+msgid ""
+"This panel is active and ready for you to add \n"
+"                            some widgets via the WP Admin"
+msgstr ""
+
+#: footer.php:55
+msgid "http://ketchupthemes.com/school-theme"
+msgstr ""
+
+#: footer.php:56
+msgid "School"
+msgstr ""
+
+#: footer.php:56
+msgid "&copy;"
+msgstr ""
+
+#: full-width-page.php:35
+#: page.php:30
+msgid "Pages:"
+msgstr ""
+
+#: functions.php:76
+#: libs/class-tgm-plugin-activation.php:161
+#: libs/class-tgm-plugin-activation.php:161
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:77
+#: libs/class-tgm-plugin-activation.php:162
+#: libs/class-tgm-plugin-activation.php:162
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:78
+#: libs/class-tgm-plugin-activation.php:163
+#: libs/class-tgm-plugin-activation.php:163
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:79
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:90
+#: libs/class-tgm-plugin-activation.php:175
+#: libs/class-tgm-plugin-activation.php:175
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:91
+#: libs/class-tgm-plugin-activation.php:177
+#: libs/class-tgm-plugin-activation.php:1941
+#: libs/class-tgm-plugin-activation.php:177
+#: libs/class-tgm-plugin-activation.php:1941
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:92
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:184
+msgid "Menu"
+msgstr ""
+
+#: functions.php:218
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:220
+#: functions.php:229
+#: functions.php:238
+msgid "This is the widgetized sidebar."
+msgstr ""
+
+#: functions.php:227
+msgid "Left footer Sidebar"
+msgstr ""
+
+#: functions.php:236
+msgid "Right Footer Sidebar"
+msgstr ""
+
+#: functions.php:261
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: home.php:15
+#: home.php:23
+msgid "Blog"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:164
+#: libs/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:176
+#: libs/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:178
+#: libs/class-tgm-plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:179
+#: libs/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:180
+#: libs/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:532
+#: libs/class-tgm-plugin-activation.php:2158
+#: libs/class-tgm-plugin-activation.php:532
+#: libs/class-tgm-plugin-activation.php:2158
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1167
+#: libs/class-tgm-plugin-activation.php:1167
+msgid "Private Repository"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1170
+#: libs/class-tgm-plugin-activation.php:1170
+msgid "Pre-Packaged"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1175
+#: libs/class-tgm-plugin-activation.php:1175
+msgid "WordPress Repository"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1178
+#: libs/class-tgm-plugin-activation.php:1178
+msgid "Required"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1178
+#: libs/class-tgm-plugin-activation.php:1178
+msgid "Recommended"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1181
+#: libs/class-tgm-plugin-activation.php:1181
+msgid "Not Installed"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1183
+#: libs/class-tgm-plugin-activation.php:1183
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1288
+#: libs/class-tgm-plugin-activation.php:1396
+#: libs/class-tgm-plugin-activation.php:1288
+#: libs/class-tgm-plugin-activation.php:1396
+msgid "Install"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1310
+#: libs/class-tgm-plugin-activation.php:1397
+#: libs/class-tgm-plugin-activation.php:1310
+#: libs/class-tgm-plugin-activation.php:1397
+msgid "Activate"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1359
+#: libs/class-tgm-plugin-activation.php:1359
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1375
+#: libs/class-tgm-plugin-activation.php:1375
+msgid "Plugin"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1376
+#: libs/class-tgm-plugin-activation.php:1376
+msgid "Source"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1377
+#: libs/class-tgm-plugin-activation.php:1377
+msgid "Type"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1378
+#: libs/class-tgm-plugin-activation.php:1378
+msgid "Status"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1924
+#: libs/class-tgm-plugin-activation.php:1924
+msgid "Install package not available."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1925
+#: libs/class-tgm-plugin-activation.php:1925
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1926
+#: libs/class-tgm-plugin-activation.php:1926
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1927
+#: libs/class-tgm-plugin-activation.php:1927
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1928
+#: libs/class-tgm-plugin-activation.php:1928
+msgid "Plugin install failed."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1929
+#: libs/class-tgm-plugin-activation.php:1929
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:1940
+#: libs/class-tgm-plugin-activation.php:1940
+msgid "Plugin activation failed."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2054
+#: libs/class-tgm-plugin-activation.php:2054
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2055
+#: libs/class-tgm-plugin-activation.php:2055
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2055
+#: libs/class-tgm-plugin-activation.php:2064
+#: libs/class-tgm-plugin-activation.php:2055
+#: libs/class-tgm-plugin-activation.php:2064
+msgid "Show Details"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2055
+#: libs/class-tgm-plugin-activation.php:2064
+#: libs/class-tgm-plugin-activation.php:2055
+#: libs/class-tgm-plugin-activation.php:2064
+msgid "Hide Details"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2056
+#: libs/class-tgm-plugin-activation.php:2056
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2057
+#: libs/class-tgm-plugin-activation.php:2057
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2061
+#: libs/class-tgm-plugin-activation.php:2061
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2062
+#: libs/class-tgm-plugin-activation.php:2062
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2063
+#: libs/class-tgm-plugin-activation.php:2063
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2064
+#: libs/class-tgm-plugin-activation.php:2064
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2065
+#: libs/class-tgm-plugin-activation.php:2065
+msgid "All installations have been completed."
+msgstr ""
+
+#: libs/class-tgm-plugin-activation.php:2066
+#: libs/class-tgm-plugin-activation.php:2066
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: options.php:33
+msgid "Basic Options"
+msgstr ""
+
+#: options.php:38
+msgid "Premium Features"
+msgstr ""
+
+#: options.php:50
+msgid "http://www.ketchupthemes.com/school/"
+msgstr ""
+
+#: options.php:39
+msgid ""
+"<ul>\n"
+"        <li>Upload Logo</li>\n"
+"        <li>Slider (enable/disable title & description)</li>\n"
+"        <li>Testimonials</li>\n"
+"        <li>Google Fonts</li>\n"
+"        <li>Color Picker</li>\n"
+"        <li>Opening Hours</li>\n"
+"        <li>Jet Pack </li>\n"
+"        <li>2-4 Columns Widgetized Footer Sidebar</li>\n"
+"        </ul>\n"
+"        <p>\n"
+"        <a rel=\"nofollow\" href=\""
+msgstr ""
+
+#: options.php:54
+msgid "Favicon Upload"
+msgstr ""
+
+#: options.php:55
+msgid "Upload Your Favicon icon here. Please upload a 16x16 icon."
+msgstr ""
+
+#: options.php:60
+msgid "Footer Sidebars"
+msgstr ""
+
+#: options.php:61
+msgid "Select Footer Sidebars Number."
+msgstr ""
+
+#: options.php:65
+msgid "1"
+msgstr ""
+
+#: options.php:66
+msgid "2"
+msgstr ""
+
+#: search.php:9
+#: search.php:12
+msgid "Search Results"
+msgstr ""
+
+#: sidebar.php:5
+msgid ""
+"This panel is active and ready for you to add some widgets via the WP Admin"
+msgstr ""
+
+#: single.php:15
+msgid ", by"
+msgstr ""

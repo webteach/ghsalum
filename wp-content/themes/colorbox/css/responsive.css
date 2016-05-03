@@ -1,0 +1,28 @@
+/* Default Layout: 1260px.  */
+.column {}
+
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.footer p {font-size: 14px;}
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+.logo{ text-align:center; margin-bottom:20px;}
+.social{ float:none; text-align:center; display:block;}
+.wp-copy{ float:none}
+.footer p { text-align: center}
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.logo{ text-align:center; margin-bottom:20px;}
+.social{ float:none; text-align:center; display:block;}
+.wp-copy{ float:none}
+.footer p { text-align: center}
+}
