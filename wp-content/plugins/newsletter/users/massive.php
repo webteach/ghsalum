@@ -169,7 +169,7 @@ if ($controls->is_action('bounces')) {
       </ul>
 
       <div id="tabs-1">
-        <table class="widefat" style="width: 300px;">
+        <table class="widefat">
           <thead>
               <tr>
                   <th><?php _e('Status', 'newsletter')?></th>
@@ -238,7 +238,7 @@ if ($controls->is_action('bounces')) {
             $female_count = $wpdb->get_var("select count(*) from " . NEWSLETTER_USERS_TABLE . " where sex='f' and status='C'");
             $other_count = ($all_count-$male_count-$female_count)
         ?>
-        <table class="widefat" style="width: 300px">
+        <table class="widefat">
             <thead><tr><th><?php _e('Gender', 'newsletter')?></th><th>Total</th></thead>
             <tr><td>Male</td><td><?php echo $male_count; ?></td></tr>
             <tr><td>Female</td><td><?php echo $female_count; ?></td></tr>
@@ -273,7 +273,7 @@ if ($controls->is_action('bounces')) {
 
       <div id="tabs-3">
         <p><?php _e('Totals refer only to confirmed subscribers.', 'newsletter')?></p>
-        <table class="widefat" style="width: 300px;">
+        <table class="widefat">
           <thead>
               <tr>
                   <th><?php _e('Number', 'newsletter')?></th>

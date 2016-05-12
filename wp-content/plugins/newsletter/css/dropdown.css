@@ -133,3 +133,18 @@
     background-color: #2ECC71 !important;
     border: 1px solid #2ECC71 !important;
 }
+
+.tnp-professional-extensions-button-red {
+    background-color: #C0392B;
+    border: 1px solid #C0392B !important;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    border-radius: 3px;
+}
+
+.tnp-professional-extensions-button-red:hover {
+    background-color: #E74C3C !important;
+    border: 1px solid #E74C3C !important;
+}

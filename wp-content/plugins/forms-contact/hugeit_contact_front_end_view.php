@@ -84,7 +84,17 @@ function front_end_hugeit_contact($rowim,  $paramssld, $hugeit_contact, $fronten
 	/*height:78px;*/
 }
 
-
+/***fvpps***/
+.free_video .portelemented .play-icss {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+	overflow: hidden;
+	outline:none; 
+}	
+/***fvpps***/
 #hugeit-contact-wrapper_<?php echo $frontendformid; ?> .hugeit-contact-column-block > div > label {
 	display:block;
 	width:38%;

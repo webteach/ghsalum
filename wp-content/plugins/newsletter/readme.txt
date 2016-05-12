@@ -1,7 +1,7 @@
 === Newsletter ===
 Tags: newsletter,email,subscription,mass mail,list build,email marketing,direct mailing
 Requires at least: 3.4.0
-Tested up to: 4.4.2
+Tested up to: 4.5
 Stable tag: trunk
 Contributors: satollo,webagile,michael-travan
 
@@ -77,9 +77,32 @@ No screenshots are available at this time.
 
 == Changelog ==
 
+= 4.2.2 =
+
+* Fixed the newsletter sent table
+
+= 4.2.1 =
+
+* Fixed the progress indicator on newsletter list
+
+= 4.2.0 =
+
+* New statistics dashboard
+* Newsletter Reports 4 support
+
+= 4.1.3 =
+
+* Fixed the notice dismiss not working on every page
+* Fixed debug notice on WP 4.5
+* Added unverified SSL connection option on SMTP panel
+
 = 4.1.2 =
 
 * Minor security fix (on admin side with admin access)
+= 4.2.0 =
+
+* Added support for Reports Extension 4
+* Improved license check
 
 = 4.1.1 =
 

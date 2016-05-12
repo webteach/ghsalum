@@ -58,11 +58,11 @@ class NewsletterModule {
         // Version check
         if (is_admin()) {
             $this->old_version = get_option($this->prefix . '_version', '0.0.0');
-            
+
             if ($this->old_version == '0.0.0') {
                 $this->first_install();
             }
-            
+
             if (strcmp($this->old_version, $this->version) != 0) {
                 $this->logger->info('Version changed from ' . $this->old_version . ' to ' . $this->version);
                 // Do all the stuff for this version change
@@ -74,7 +74,7 @@ class NewsletterModule {
             $this->available_version = get_option($this->prefix . '_available_version');
         }
     }
-    
+
     function first_install() {
         
     }
@@ -543,6 +543,7 @@ class NewsletterModule {
     function add_admin_page($page, $title) {
         global $newsletter;
         $name = 'newsletter_' . $this->module . '_' . $page;
+        $name = apply_filters('newsletter_admin_page', $name);
         add_submenu_page(null, $title, $title, ($newsletter->options['editor'] == 1) ? 'manage_categories' : 'manage_options', $name, array($this, 'menu_page'));
     }
 
@@ -552,6 +553,7 @@ class NewsletterModule {
         $parts = explode('_', $plugin_page, 3);
         $module = sanitize_file_name($parts[1]);
         $page = sanitize_file_name($parts[2]);
+        $page = str_replace('_', '-', $page);
 
         $file = WP_CONTENT_DIR . '/extensions/newsletter/' . $module . '/' . $page . '.php';
         if (!is_file($file)) {
@@ -591,6 +593,56 @@ class NewsletterModule {
 
     function get_email($id, $format = OBJECT) {
         return $this->store->get_single(NEWSLETTER_EMAILS_TABLE, $id, $format);
+    }
+
+    function get_email_status_label($email) {
+        switch ($email->status) {
+            case 'sending':
+                if ($email->send_on > time()) {
+                    return __('Scheduled', 'newsletter');
+                } else {
+                    return __('Sending', 'newsletter');
+                }
+
+            case 'sent':
+                return __('Sent', 'newsletter');
+            case 'paused':
+                return __('Paused', 'newsletter');
+            case 'new':
+                return __('Draft', 'newsletter');
+            default:
+                return ucfirst($email->status);
+        }
+    }
+
+    function get_email_type_label($type) {
+
+        // Is an email?
+        if (is_object($type))
+            $type = $type->type;
+
+        switch ($type) {
+            case 'followup':
+                return 'Followup';
+            case 'message':
+                return 'Standard Newsletter';
+            case 'feed':
+                return 'Feed by Mail';
+        }
+
+        if (strpos($type, 'automated') === 0) {
+            list($a, $id) = explode('_', $type->type);
+            return 'Automated Channel ' . $id;
+        }
+
+        return ucfirst($type);
+    }
+
+    function get_email_progress_label($email) {
+        if ($email->status == 'sent' || $email->status == 'sending') {
+            return $email->sent . ' ' . __('of', 'newsletter') . ' ' . $email->total;
+        }
+        return '-';
     }
 
     /** Searches for a user using the nk parameter or the ni and nt parameters. Tries even with the newsletter cookie.

@@ -1726,6 +1726,10 @@ aside:nth-child(odd) {
   display: inline-block;
   padding-bottom: 10px;
 }
+/* Disable Repeated Featured Image on Every page */
+.single-paged #primary-mono #featured-image {
+  display: none;
+}
 /* --------------- comments -------------- */
 #respond h3#reply-title {
   font-weight: normal;

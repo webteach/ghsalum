@@ -1,6 +1,10 @@
 ChangeLog
 =========
 
+Version 1.0.1.0
+
+	i) Disabled Repetitive Featured images on Paged Posts.
+
 Version 1.0.0.9
 
 	i) Used Proper names for Enquing Scripts

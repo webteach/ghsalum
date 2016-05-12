@@ -58,9 +58,13 @@
 	font-size: 13px;
 	line-height: 16px;
 }
-.af-widget-wrap#af-small .af-meta-box img.af-app-store-button {
+.af-widget-wrap#af-small .af-meta-box.af-single img.af-app-store-button {
 	width: 100px;
 	height: 31px;
+}
+.af-widget-wrap#af-small .af-meta-box.af-dual img.af-app-store-button {
+	width: 85px;
+	height: 27px;
 }
 
 
@@ -91,6 +95,9 @@
 	padding: 0;
 	font-size: 13px;
 	line-height: 16px;
+}
+.af-widget-wrap#af-big .af-meta-box a {
+	display: block;
 }
 .af-widget-wrap#af-big .af-meta-box img.af-app-store-button {
 	width: 130px;

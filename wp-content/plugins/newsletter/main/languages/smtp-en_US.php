@@ -6,5 +6,6 @@ $options = array(
     'user' => '',
     'pass' => '',
     'port' => 25,
-    'secure' => ''
+    'secure' => '',
+    'ssl_insecure' => 0
 );

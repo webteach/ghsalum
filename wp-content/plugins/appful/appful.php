@@ -3,7 +3,7 @@
 Plugin Name: appful
 Plugin URI: https://appful.io/
 Description: appful is one of the world's most remarkable & beautiful app service for Blogger and Online magazines. It is designed to create outstanding real native iOS and Android Apps based on the content of your Wordpress site or YouTube channel. appful is surprisingly simple to use and not a single line of code is required.
-Version: 1.0.31
+Version: 1.0.32
 Author: appful UG (haftungsbeschränkt)
 Author URI: https://appful.io/
 */

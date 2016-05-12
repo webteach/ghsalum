@@ -3,8 +3,8 @@ Contributors: appful
 Donate link: https://appful.io/
 Tags: iPhone App,mobile,App,native,Apps,beautiful Apps,mobile App,mobile iPhone App,iOS,Native Mobile App,iPad,Apple Watch,WordPress iphone app,native App,wordpress App,android,app for WordPress,build an app,build mobile apps,build WordPress app,create blog app,ios app,ipad app,iphone,wordpress Blog App,WordPress app,mobile app for WordPress,mobile app plugin,mobile plugin,mobile site,mobile Smartphone App,mobile theme,WordPress apps,mobile web,mobile website,appful,native app plugin,windows mobile,website to mobile app,wordpress android,push notifications,WordPress android app,WordPress app builder,WordPress app maker,WordPress blog app,kostenlose mobile App,WordPress to android app,WordPress ios app,wordpress iphone,wordpress mobile,WordPress mobile app,WordPress to app,simple mobile App,WordPress to mobile app,app erstellen,ios app erstellen,blog app erstellen,Créer app,app construire,de créer application mobile,Crear aplicación,aplicación construir,crear aplicaciones móviles,android app,android blog app,android smartphone,android tablet,app for android,app for blog,app for ios,app generator,apple,application,blog app,build blog app,build mobile app,comments,create mobile app,Facebook,google,mobile app converter,native android app,native blog app,native ios app,native smartphone app,native wordpress app,native wordpress app plugin,Post,posts,push,push notification,smartphone,social,tablet,twitter,widget,wordpress,wordpress app plugin,wordpress apple app,wordpress ipad app,wordpress native app plugin,WordPress Plugin,wordpress website app 
 Requires at least: 3.0
-Tested up to: 4.4.1
-Stable tag: 4.4
+Tested up to: 4.5
+Stable tag: 4.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -221,6 +221,9 @@ The best thing is that we want you to be happy with your app so we decided not t
 Once you are content with your mobile app you can hand it over to us and we will take care of the remaining process. We will hand your iOS App over to Apple and your Android App to Google and offer strong servers that process the content of your mobile app. Your site does not have to struggle with an extra amount of traffic.
 
 == Changelog ==
+
+= appful Mobile App Plugin 1.0.32 =
+* added play store button in widget
 
 = appful Mobile App Plugin 1.0.31 =
 * support for rocket lazyload

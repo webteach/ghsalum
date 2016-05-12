@@ -50,6 +50,16 @@ if (!$controls->is_action()) {
 
         $mail->SMTPSecure = $controls->data['secure'];
         $mail->SMTPAutoTLS = false;
+        
+        if ($controls->data['ssl_insecure'] == 1) {
+                $mail->SMTPOptions = array(
+                    'ssl' => array(
+                        'verify_peer' => false,
+                        'verify_peer_name' => false,
+                        'allow_self_signed' => true
+                    )
+                );
+        }
 
         if (!empty($controls->data['user'])) {
             $mail->SMTPAuth = true;
@@ -142,6 +152,12 @@ if (!$controls->is_action()) {
                     <p class="description">
                         If authentication is not required, leave "user" field blank.
                     </p>
+                </td>
+            </tr>
+            <tr>
+                <th>Insecure SSL Connections</th>
+                <td>
+                    <?php $controls->yesno('ssl_insecure'); ?> <a href="http://www.thenewsletterplugin.com/?p=21989" target="_blank">Read more</a>.
                 </td>
             </tr>
             <tr>

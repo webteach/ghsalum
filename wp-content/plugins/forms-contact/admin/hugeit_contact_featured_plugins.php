@@ -274,22 +274,6 @@
 <div class="element hugeitmicro-item">
 	<div class="left-block">
 		<div class="main-image-block">
-			<a href="http://huge-it.com/colorbox/" target="_blank" rel="content"><img src="<?php echo plugins_url( '../images/colorbox-logo.png' , __FILE__ ); ?>"></a>
-		</div>
-	</div>
-	<div class="right-block">
-		<div class="title-block"><h3>Wordpress Colorbox</h3></div>
-			<p><?php echo __("Huge-It Colorbox is the most spellbinding plugin in WordPress that implement Lightbox-effect look of the images and videos (when you click on the thumbnail of the image/video it nicely opens and increases in the same window with a beautiful effect).","product-catalog");?></p>
-		<div class="description-block">
-		</div>			  				
-		<div class="button-block">
-			<a href="http://huge-it.com/colorbox/" target="_blank"><?php echo __("View Plugin","product-catalog");?></a>
-		</div>
-	</div>
-</div>
-<div class="element hugeitmicro-item">
-	<div class="left-block">
-		<div class="main-image-block">
 			<a href="http://huge-it.com/video-player/" target="_blank" rel="content"><img src="<?php echo plugins_url( '../images/video-player-logo.png' , __FILE__ ); ?>"></a>
 		</div>
 	</div>

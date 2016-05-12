@@ -234,7 +234,7 @@ if (count($calls) > 1) {
                         <code>wp-content/logs/newsletter</code>.
                     </p>
 
-                    <table class="widefat" style="width: auto">
+                    <table class="widefat">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -274,7 +274,7 @@ if (count($calls) > 1) {
                 <!-- SEMAPHORES -->
                 <div id="tabs-2">
                     <h4>Semaphores</h4>
-                    <table class="widefat" style="width: auto">
+                    <table class="widefat">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -302,7 +302,7 @@ if (count($calls) > 1) {
                     </table>
 
                     <h4>Crons</h4>
-                    <table class="widefat" style="width: auto">
+                    <table class="widefat">
                         <thead>
                             <tr>
                                 <th>Function</th>
@@ -401,7 +401,7 @@ if (count($calls) > 1) {
                 <!-- SYSTEM -->
                 <div id="tabs-4">
 
-                    <table class="widefat" style="width: auto">
+                    <table class="widefat">
                         <thead>
                             <tr>
                                 <th>Parameter</th>

@@ -116,3 +116,20 @@ error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol in /home/ubu
 [13-Apr-2016 20:44:31 UTC] PHP  13. acymailingPHPMailer->SmtpConnect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:566
 [13-Apr-2016 20:44:31 UTC] PHP  14. acymailingSMTP->Connect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:658
 [13-Apr-2016 20:44:31 UTC] PHP  15. fsockopen() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php:123
+[10-May-2016 12:39:44 UTC] PHP Warning:  fsockopen(): unable to connect to smtp.mailgun.org:55 (Connection timed out) in /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php on line 123
+[10-May-2016 12:39:44 UTC] PHP Stack trace:
+[10-May-2016 12:39:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2016 12:39:44 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:89
+[10-May-2016 12:39:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:525}() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[10-May-2016 12:39:44 UTC] PHP   4. WYSIJA_help->ajax() /home/ubuntu/workspace/wp-includes/plugin.php:525
+[10-May-2016 12:39:44 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395}() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[10-May-2016 12:39:44 UTC] PHP   6. WYSIJA_control_back_config->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/core/base.php:395
+[10-May-2016 12:39:44 UTC] PHP   7. WYSIJA_help_email->send_test_mail() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/controllers/ajax/config.php:33
+[10-May-2016 12:39:44 UTC] PHP   8. WYSIJA_help_mailer->sendSimple() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/email.php:99
+[10-May-2016 12:39:44 UTC] PHP   9. WYSIJA_help_mailer->sendOne() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:818
+[10-May-2016 12:39:44 UTC] PHP  10. WYSIJA_help_mailer->send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:667
+[10-May-2016 12:39:44 UTC] PHP  11. acymailingPHPMailer->Send() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/helpers/mailer.php:239
+[10-May-2016 12:39:44 UTC] PHP  12. acymailingPHPMailer->SmtpSend() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:447
+[10-May-2016 12:39:44 UTC] PHP  13. acymailingPHPMailer->SmtpConnect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:566
+[10-May-2016 12:39:44 UTC] PHP  14. acymailingSMTP->Connect() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.phpmailer.php:658
+[10-May-2016 12:39:44 UTC] PHP  15. fsockopen() /home/ubuntu/workspace/wp-content/plugins/wysija-newsletters/inc/phpmailer/class.smtp.php:123

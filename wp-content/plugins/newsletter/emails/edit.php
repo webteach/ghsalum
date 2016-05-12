@@ -436,6 +436,7 @@ if ($email['editor'] == 0) {
                     </tr>
                 </table>
             </div>
+            
             <div id="tabs-status">
                 <table class="form-table">
                     <tr valign="top">

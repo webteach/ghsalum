@@ -48,15 +48,16 @@ class Appful_Widget extends WP_Widget {
 		}
 		?>
 		<link href="<?php echo plugins_url("assets/css/appful-widget.css", dirname(__FILE__)) ?>" rel="stylesheet">
-		<div class="af-widget-wrap" id="af-<? echo $instance["size"] == 1 ? "small" : "big" ?>">
+		<div class="af-widget-wrap" id="af-<?php echo $instance["size"] == 1 ? "small" : "big" ?>">
 			<div class="af-app-icon">
 				<img src="<?php echo $app["thumbnails"]["120"] ?>" alt="App Icon" />
 			</div>
-			<div class="af-meta-box">
+			<div class="af-meta-box af-<?php echo $app["itunes_id"] && $app["packet_name"] ? "dual" : "single" ?>">
 				<h3><?php echo $app["bundle_name"] ?></h3>
 				<p><?php echo $instance["description"] ?></p>
 				<?php if($branding && $app["branding"]) { ?><a href="<?php echo $branding["url"] ?>" class="af-credit" target="_blank"><?php echo $branding["title"] ?></a><?php } ?>
-				<a href="http://itunes.apple.com/<?php echo $appful_api->locale() ?>/app/id<?php echo $app["itunes_id"] ?>" target="_blank"><img class="af-app-store-button" src="<?php echo plugins_url("assets/img/app-store-button.png", dirname(__FILE__)) ?>" alt="App Store Button" width="" height="" /></a><br>
+				<?php if($app["itunes_id"]) { ?><a href="http://itunes.apple.com/<?php echo $appful_api->locale() ?>/app/id<?php echo $app["itunes_id"] ?>" target="_blank"><img class="af-app-store-button" src="<?php echo plugins_url("assets/img/app-store-button.png", dirname(__FILE__)) ?>" alt="App Store Button" width="" height="" /></a><?php } ?>
+				<?php if($app["packet_name"]) { ?><a href="https://play.google.com/store/apps/details?id=<?php echo $app["packet_name"] ?>" target="_blank"><img class="af-app-store-button" src="<?php echo plugins_url("assets/img/play-store-button.png", dirname(__FILE__)) ?>" alt="Play Store Button" width="" height="" /></a><?php } ?><br>
 			</div>
 			<?php if($branding && $app["branding"]) { ?><br><?php if(strlen($instance["description"]) > 0) { ?><br><?php } } ?>
 		</div>

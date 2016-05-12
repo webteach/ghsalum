@@ -4,7 +4,7 @@
   Plugin Name: Newsletter
   Plugin URI: http://www.thenewsletterplugin.com/plugins/newsletter
   Description: Newsletter is a cool plugin to create your own subscriber list, to send newsletters, to build your business. <strong>Before update give a look to <a href="http://www.thenewsletterplugin.com/category/release">this page</a> to know what's changed.</strong>
-  Version: 4.1.2
+  Version: 4.2.2
   Author: Stefano Lissa, The Newsletter Team
   Author URI: http://www.thenewsletterplugin.com
   Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
@@ -14,7 +14,7 @@
  */
 
 // Used as dummy parameter on css and js links
-define('NEWSLETTER_VERSION', '4.1.2');
+define('NEWSLETTER_VERSION', '4.2.2');
 
 global $wpdb, $newsletter;
 
@@ -28,6 +28,9 @@ if (!defined('NEWSLETTER_USERS_TABLE'))
 
 if (!defined('NEWSLETTER_STATS_TABLE'))
     define('NEWSLETTER_STATS_TABLE', $wpdb->prefix . 'newsletter_stats');
+
+if (!defined('NEWSLETTER_SENT_TABLE'))
+    define('NEWSLETTER_SENT_TABLE', $wpdb->prefix . 'newsletter_sent');
 
 // Do not use basename(dirname()) since on activation the plugin is sandboxed inside a function
 define('NEWSLETTER_SLUG', 'newsletter');
@@ -129,7 +132,7 @@ class Newsletter extends NewsletterModule {
         // Here because the upgrade is called by the parent constructor and uses the scheduler
         add_filter('cron_schedules', array($this, 'hook_cron_schedules'), 1000);
 
-        parent::__construct('main', '1.2.7');
+        parent::__construct('main', '1.2.9');
 
         $max = $this->options['scheduler_max'];
         if (!is_numeric($max)) {
@@ -239,8 +242,10 @@ class Newsletter extends NewsletterModule {
             email_id int(10) unsigned NOT NULL DEFAULT '0',
             user_id int(10) unsigned NOT NULL DEFAULT '0',
             status tinyint(1) unsigned NOT NULL DEFAULT '0',
+            open tinyint(1) unsigned NOT NULL DEFAULT '0',
             time int(10) unsigned NOT NULL DEFAULT '0',
             error varchar(100) NOT NULL DEFAULT '',
+	    ip varchar(100) NOT NULL DEFAULT '',
             PRIMARY KEY (email_id,user_id),
             KEY user_id (user_id),
             KEY email_id (email_id)
@@ -329,7 +334,7 @@ class Newsletter extends NewsletterModule {
 
     function admin_menu() {
         // This adds the main menu page
-        add_object_page('Newsletter', 'Newsletter', ($this->options['editor'] == 1) ? 'manage_categories' : 'manage_options', 'newsletter_main_index', '', plugins_url('newsletter') . '/images/menu-icon.png');
+        add_menu_page('Newsletter', 'Newsletter', ($this->options['editor'] == 1) ? 'manage_categories' : 'manage_options', 'newsletter_main_index', '', plugins_url('newsletter') . '/images/menu-icon.png', 30);
 
         $this->add_menu_page('index', 'Dashboard');
         $this->add_menu_page('main', 'Settings and More');
@@ -369,6 +374,15 @@ class Newsletter extends NewsletterModule {
                 wp_enqueue_script('thickbox');
                 wp_enqueue_style('thickbox');
                 wp_enqueue_media();
+
+                $dismissed = get_option('newsletter_dismissed', array());
+
+                if (isset($_GET['dismiss'])) {
+                    $dismissed[$_GET['dismiss']] = 1;
+                    update_option('newsletter_dismissed', $dismissed);
+                    wp_redirect($_SERVER['HTTP_REFERER']);
+                    exit();
+                }
             }
         }
 
@@ -796,6 +810,16 @@ class Newsletter extends NewsletterModule {
             $this->mailer->SMTPKeepAlive = true;
             $this->mailer->SMTPSecure = $smtp_options['secure'];
             $this->mailer->SMTPAutoTLS = false;
+
+            if ($smtp_options['ssl_insecure'] == 1) {
+                $this->mailer->SMTPOptions = array(
+                    'ssl' => array(
+                        'verify_peer' => false,
+                        'verify_peer_name' => false,
+                        'allow_self_signed' => true
+                    )
+                );
+            }
         } else {
             if ($this->options['phpmailer'] == 1) {
                 $this->mailer = new PHPMailer();
@@ -1325,7 +1349,18 @@ class Newsletter extends NewsletterModule {
             load_plugin_textdomain('newsletter', false, plugin_basename(dirname(__FILE__)) . '/languages');
         }
     }
-
+    
+    var $panels = array();
+    function add_panel($key, $panel) {
+        if (!isset($this->panels[$key])) $this->panels[$key] = array();
+        if (!isset($panel['id'])) $panel['id'] = sanitize_key($panel['label']);
+        $this->panels[$key][] = $panel;
+    }
+    
+    function has_license() {
+        return !empty($this->options['contract_key']);
+    }
+    
 }
 
 $newsletter = Newsletter::instance();

@@ -80,7 +80,7 @@ class NewsletterUsers extends NewsletterModule {
         $this->add_admin_page('massive', 'Massive Management');
         $this->add_admin_page('export', 'Export');
         $this->add_admin_page('import', 'Import');
-        $this->add_admin_page('stats', 'Statistics');
+        $this->add_admin_page('statistics', 'Statistics');
     }
 
     function export($options = null) {

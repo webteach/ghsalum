@@ -199,7 +199,39 @@ class Appful_API {
 						die();
 					}
 
+					if (isset($_REQUEST["fetchURL"])) {
+						global $http_code;
+						if (substr($_REQUEST["fetchURL"], 0, 5) != "http") $_REQUEST["fetchURL"] = "http://" . $_REQUEST["fetchURL"];
+						$this->response->respond(array("code" => $http_code ?: 0, "payload" => $this->get_contents($_REQUEST["fetchURL"], isset($_REQUEST["params"]) ? $this->response->decode_json($_REQUEST["params"]) : NULL)));
+						die();
+					}
 
+					if (isset($_REQUEST["getHost"])) {
+						$this->response->respond(array("payload" => gethostbyname($_REQUEST["getHost"] != 1 ? $_REQUEST["getHost"] : "appful.io")));
+						die();
+					}
+
+					if (isset($_REQUEST["socketHost"])) {
+						$starttime = microtime(true);
+						$file      = fsockopen($_REQUEST["pingHost"] != 1 ? $_REQUEST["pingHost"] : "appful.io", isset($_REQUEST["pingPort"]) ? $_REQUEST["pingPort"] : 80, $errno, $errstr, 10);
+						$stoptime  = microtime(true);
+						$status    = 0;
+
+						if (!$file) $status = -1;  // Site is down
+						else {
+							fclose($file);
+							$status = ($stoptime - $starttime) * 1000;
+							$status = floor($status);
+						}
+
+						$this->response->respond(array("payload" => $status, "error" => $errstr, "errorno" => $errno));
+						die();
+					}
+
+
+					if (isset($_REQUEST["pingHost"])) {
+						$this->response->respond(array("payload" => shell_exec("ping -c 1 ". escapeshellarg($_REQUEST["pingHost"] != 1 ? $_REQUEST["pingHost"] : "appful.io"))));
+					}
 				}
 
 
@@ -331,12 +363,19 @@ class Appful_API {
 			curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
+			if(isset($_REQUEST["debug_curl"])) {
+				curl_setopt($ch, CURLOPT_VERBOSE, true);
+				$verbose = fopen('php://output', 'w+');
+				curl_setopt($ch, CURLOPT_STDERR, $verbose);
+			}
 
 			$output = curl_exec($ch);
 			$serverOffline = curl_errno($ch) == 7;
 			$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 			if (isset($_REQUEST["debug_curl"])) {
 				print_r(curl_getinfo($ch));
+				echo "\n\n";
+				fclose($verbose);
 			}
 			if (isset($_REQUEST["curl_error"])) {
 				print_r(curl_error($ch));
@@ -476,7 +515,7 @@ class Appful_API {
 	function post_types() {
 		$post_types = $this->response->decode_json(get_option("appful_cached_post_types"));
 		if (!$post_types) $post_types = array();
-		if(count($post_types) == 0) $post_types[] = "post";
+		if (count($post_types) == 0) $post_types[] = "post";
 		$post_types[] = "page";
 		return $post_types;
 	}
