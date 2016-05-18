@@ -24,13 +24,13 @@ if (isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && $_SERVER["HTTP_X_FORWARDED_PROT
 define('DB_NAME', 'alum');
 
 /** MySQL database username */
-define('DB_USER', substr(getenv('root@localhost'), 0, 16));
+define('DB_USER', substr(getenv('root'), 0, 16));
 
 /** MySQL database password */
 define('DB_PASSWORD', 'mrSDUUTHip');
 
 /** MySQL hostname */
-define('DB_HOST', getenv('104.131.66.111'));
+define('DB_HOST', getenv('localhost'));
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
